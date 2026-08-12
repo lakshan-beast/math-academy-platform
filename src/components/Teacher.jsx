@@ -1,4 +1,6 @@
-import ReactPlayer from "react-player";
+// 1. File eka top-level import karanna
+// import introVideo from "../assets/Dummy-Videos-For-Demo-Use.mp4";
+// import ReactPlayer from "react-player";
 import { mathTeacher } from "./Mockdata";
 
 export default function Teacher() {
@@ -63,20 +65,47 @@ export default function Teacher() {
 
         {/* Right Card: Custom Clean Video Viewport (Occupies 3 columns) */}
         <div className="lg:col-span-3 bg-black rounded-3xl overflow-hidden shadow-2xl relative border-4 border-white aspect-video lg:h-full">
-          <ReactPlayer
-            url={mathTeacher.introVideoUrl}
+          {/* <video */}
+          {/* // <ReactPlayer
+            // url={mathTeacher.introVideoUrl}
+            url="../assets/Dummy-Videos-For-Demo-Use.mp4"
             width="100%"
             height="100%"
             controls={true}
-            config={{
-              youtube: {
-                playerVars: {
-                  modestbranding: 1, // Hides the YouTube logo
-                  rel: 0, // Prevents related videos showing from other channels
-                  showinfo: 0, // Prevents top title bars showing
-                },
-              },
-            }}
+            // config={{
+            //   youtube: {
+            //     playerVars: {
+            //       modestbranding: 1, // Hides the YouTube logo
+            //       rel: 0, // Prevents related videos showing from other channels
+            //       showinfo: 0, // Prevents top title bars showing
+            //     },
+            //   },
+            // }}
+            autoPlay="on"
+          /> */}
+
+          {/* <ReactPlayer
+            url={introVideo} //  2. Import karapu variable eka pass karanna
+            width="100%"
+            height="100%"
+            controls={true}
+            playing={true} // ReactPlayer eke autoplay weddi 'playing' use karanna
+          /> */}
+
+          {/* <ReactPlayer
+            url="/Dummy-Videos-For-Demo-Use.mp4" //  Public folder eke thiyena nisama direct '/' danna puluwan
+            width="100%"
+            height="100%"
+            controls={true}
+          /> */}
+
+          <video
+            src="/intro.mp4" //  Meka absolute path ekak (root eke thiyena nisa direct file name eka)
+            controls
+            controls={true}
+            muted={true}
+            autoPlay="on"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>

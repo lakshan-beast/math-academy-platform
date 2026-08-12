@@ -1,1 +1,7 @@
+/* css-validate-disable */
 @import "tailwindcss";
+
+@theme {
+  --font-exo: "Exo 2", sans-serif;
+  --font-baloo: "Baloo 2", sans-serif;
+}

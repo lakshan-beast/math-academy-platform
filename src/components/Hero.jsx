@@ -1,19 +1,19 @@
 export default function Hero() {
   return (
-    <section className="relative bg-linear-to-b from-emerald-50 via-white to-white px-6 overflow-hidden">
-      <div className="max-w-7xl mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="relative bg-linear-to-b from-emerald-50 via-white to-white px-6 overflow-hidden flex justify-center">
+      <div className="max-w-7xl mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:flex-col-reverse">
         {/* left column */}
         <div className="space-y-6 text-center lg:text-left py-6">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-s font-semibold bg-emerald-100 text-emerald-800">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-s font-semibold bg-emerald-100 text-emerald-800 font-baloo">
             Grades 6 - 11 Mathematics Specailist
           </span>
 
-          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-gray-900 leading-tight">
+          <h1 className="font-exo text-4xl sm:text-6xl font-black tracking-tight text-gray-900 leading-tight">
             Master Mathematics <br />
             Step-by-Step
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-600 max-w-xl mx-auto  lg:mx-0">
+          <p className="font-baloo text-base sm:text-lg text-gray-600  max-w-xl mx-auto  lg:mx-0">
             Access structured monthly lessons, clear theory breakdowns, &
             intensive O/L model paper discussions explicity mapped out to
             guarantee your "A" Grade.
@@ -22,12 +22,12 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <button
               type="button"
-              className="w-full sm:w-auto px-8 py-4 font-bold text-white bg-emerald-600 hover:bg-emerald-700  rounded-xl shadow-lg hover:shadow-emerald-200 transition-all cursor-pointer">
+              className="font-exo w-full sm:w-auto px-8 py-4 font-bold text-white bg-emerald-600 hover:bg-emerald-700  rounded-xl shadow-lg hover:shadow-emerald-200 transition-all cursor-pointer">
               Explore Monthly Packs
             </button>
             <button
               type="button"
-              className="w-full sm:w-auto px-8 py-4 font-bold text-gray-700 bg-gray-100 hover:bg-gray-200  rounded-xl transition-all cursor-pointer">
+              className="font-exo w-full sm:w-auto px-8 py-4 font-bold text-gray-700 bg-gray-100 hover:bg-gray-200  rounded-xl transition-all cursor-pointer">
               Watch Free Intro
             </button>
           </div>

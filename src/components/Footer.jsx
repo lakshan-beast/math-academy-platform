@@ -1,4 +1,5 @@
 import React from "react";
+import { RiArrowRightSFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
@@ -18,10 +19,17 @@ export default function Footer() {
               Grade 6-11 school theory blocks and O/L past paper mastery.
             </p>
 
+            {/* socail media */}
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
             </ul>
           </div>
 
@@ -36,28 +44,28 @@ export default function Footer() {
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors ">
-                  Grade 11 Theory
+                  <RiArrowRightSFill /> Grade 11 Theory
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors ">
-                  Grade 10 Theory
+                  <RiArrowRightSFill /> Grade 10 Theory
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors ">
-                  O/L Paper Class
+                  <RiArrowRightSFill /> O/L Paper Class
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors ">
-                  Junior Secondary (6-9)
+                  <RiArrowRightSFill /> Junior Secondary (6-9)
                 </a>
               </li>
             </ul>
@@ -74,28 +82,28 @@ export default function Footer() {
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors">
-                  Dashboard
+                  <RiArrowRightSFill /> Dashboard
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors">
-                  My Enrolled Packs
+                  <RiArrowRightSFill /> My Enrolled Packs
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors">
-                  Billing & Receipts
+                  <RiArrowRightSFill /> Billing & Receipts
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   className="hover:text-emerald-400 transition-colors">
-                  Support Helpline
+                  <RiArrowRightSFill /> Support Helpline
                 </a>
               </li>
             </ul>
@@ -110,15 +118,15 @@ export default function Footer() {
               Mobile : <a href="tel:+947******">+94 7 *** ** **</a>
             </p>
             <p>
-              Medadumbara, Kandy, Sri Lanka. <br />
-              Email :{" "}
+              Kandy, Sri Lanka. <br />
+              Email :
               <a href="mailto:support@edustream.com">support@edustream.com</a>
             </p>
           </div>
         </div>
 
         {/* footer bottom container */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs">
           <p>
             @copyrights <span>2026</span> Edu.stream. All rights reserved.
           </p>

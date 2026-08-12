@@ -57,6 +57,7 @@
 // ];
 
 import { type ModulePack, type TeacherProfile } from "../types/index.ts";
+// import Video from "../assets/Dummy-Videos-For-Demo-Use.mp4";
 
 export const mathTeacher: TeacherProfile = {
   name: "Asanka Nayanajith",
@@ -65,8 +66,11 @@ export const mathTeacher: TeacherProfile = {
     "10+ Years of O/L Examination Coaching Experience",
   ],
   bio: "Simplifying complex mathematical theories into easy-to-remember practical steps. Helping thousands of school students achieve their 'A' pass for O/L Mathematics.",
-  introVideoUrl: "https://youtu.be/EngW7tLk6R8?si=eCvqYlBKKqTLX3h5",
-  avatarUrl: "https://unsplash.com/photos/a-man-in-a-suit-standing-with-his-arms-crossed-tmwHp7-5LP4",
+  // introVideoUrl: "https://youtu.be/EngW7tLk6R8?si=eCvqYlBKKqTLX3h5",
+  introVideoUrl: "../assets/Dummy-Videos-For-Demo-Use.mp4",
+  // introVideoUrl: Video,
+  avatarUrl:
+    "https://unsplash.com/photos/a-man-in-a-suit-standing-with-his-arms-crossed-tmwHp7-5LP4",
 };
 
 export const mockModules: ModulePack[] = [
