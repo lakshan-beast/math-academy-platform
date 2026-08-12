@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
 
-import Hero from "./components/Hero.jsx";
-import Teacher from "./components/Teacher.jsx";
+import Hero from "./components/Hero.js";
+import Teacher from "./components/Teacher.js";
 
 function App() {
   return (

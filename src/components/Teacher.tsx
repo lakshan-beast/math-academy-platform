@@ -102,9 +102,9 @@ export default function Teacher() {
           <video
             src="/intro.mp4" //  Meka absolute path ekak (root eke thiyena nisa direct file name eka)
             controls
-            controls={true}
+            // controls={true}
             muted={true}
-            autoPlay="on"
+            // autoPlay="on"
             className="w-full h-full object-cover"
           />
         </div>
