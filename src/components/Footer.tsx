@@ -1,4 +1,4 @@
-import React from "react";
+
 import { RiArrowRightSFill } from "react-icons/ri";
 
 export default function Footer() {
