@@ -5,7 +5,7 @@ import { mathTeacher } from "./Mockdata";
 
 export default function Teacher() {
   return (
-    <section className="py-16 px-8 max-w-7xl mx-auto">
+    <section id="intro" className="py-16 px-8 max-w-7xl mx-auto">
       {/* structural title component */}
       <div className="mb-10 text-center lg:text-left">
         <span className="text-xs font-bold text-emerald-600 uppercase tracking-widset bg-emerald-50 px-3 py-1 rounded-md">
@@ -23,7 +23,7 @@ export default function Teacher() {
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
               <img
-                src={mathTeacher.avatarUrl}
+                src="/teacher-image.jpg"
                 alt={mathTeacher.name}
                 className="w-20 h-20 rounded-2xl object-cover border-2 border-emerald-500 shadow-md"
               />
