@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* brand name */}
         <div className="flex items-center space-x-2">
-          <span className="text-3xl font-exo font-semibold tracking-tight text-emerald-600">
+          <span className="text-3xl font-exo font-semibold tracking-tight text-purple-600">
             Edu.<span className="text-gray-900">Stream</span>
           </span>
         </div>
@@ -12,17 +12,17 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8">
           <a
             href="#home"
-            className="text-lg font-medium font-exo text-gray-600 hover:text-emerald-600 transition-colors">
+            className="text-lg font-medium font-exo text-gray-600 hover:text-purple-600 transition-colors">
             Home
           </a>
           <a
             href="#classes"
-            className="text-lg font-medium font-exo text-gray-600 hover:text-emerald-600 transition-colors">
+            className="text-lg font-medium font-exo text-gray-600 hover:text-purple-600 transition-colors">
             All Courses
           </a>
           <a
             href="#about"
-            className="text-lg font-medium font-exo text-gray-600 hover:text-emerald-600 transition-colors">
+            className="text-lg font-medium font-exo text-gray-600 hover:text-purple-600 transition-colors">
             About
           </a>
         </div>
@@ -30,12 +30,12 @@ export default function Navbar() {
         <div className="flex items-center space-x-6">
           <button
             type="button"
-            className="text-sm font-semibold font-exo text-gray-700 hover:text-emerald-600 transition-colors">
+            className="text-sm font-semibold font-exo text-gray-700 hover:text-purple-600 transition-colors">
             Sign in
           </button>
           <button
             type="button"
-            className="px-4 py-2 text-sm font-semibold font-exo text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm transition-all">
+            className="px-4 py-2 text-sm font-semibold font-exo text-white bg-purple-600 hover:bg-purple-700 rounded-lg shadow-sm transition-all">
             Regiter Now
           </button>
         </div>

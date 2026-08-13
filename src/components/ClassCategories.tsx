@@ -53,7 +53,7 @@ export default function ClassCategories() {
   return (
     <section id="classes" className="font-baloo py-20 px-6 max-w-7xl mx-auto">
       <div className="mb-12 text-center">
-        <span className="font-exo text-xs font-black text-emarald-500 uppercase tracking-widest bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-md"></span>
+        <span className="font-exo text-xs font-black text-emarald-500 uppercase tracking-widest bg-purple-950/40 border border-purple-500/20 px-3 py-1 rounded-md"></span>
         <h2 className="font-exo text-3xl sm:text-5xl font-black text-gray-900 uppercase dark:text-white mt-3 tracking-tight ">
           Select Your Class
         </h2>
@@ -68,14 +68,14 @@ export default function ClassCategories() {
         {classesData.map((clss) => (
           <div
             key={clss.id}
-            className={`relative group bg-white dark:bg-slate-900 border p-6 rounded-3xl transition-all duratioan-300 shadow-sm ${clss.active ? "border-emerald-500/30 dark:border-emerald-500/20 shadow-emerald-500/5 hover:-translate-y-1 hover:shadow-md hover:border-emerald-500 cursor-pointer" : "border-gray-200 dark:border-slate-800 opacity-40 pointer-events-none"}`}
+            className={`relative group bg-white dark:bg-slate-900 border p-6 rounded-3xl transition-all duratioan-300 shadow-sm ${clss.active ? "border-purple-500/30 dark:border-purple-500/20 shadow-purple-500/5 hover:-translate-y-1 hover:shadow-md hover:border-purple-500 cursor-pointer" : "border-gray-200 dark:border-slate-800 opacity-40 pointer-events-none"}`}
             onClick={() =>
               clss.active && alert(`${clss.name} Welcome to the class!.`)
             }>
             {/* top tow indicators */}
             <div className="flex justify-between items-start mb-4">
               <span
-                className={`font-exo text-xs font-bold px-2.5 py-1 rounded-lg tracking-wide ${clss.active ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400" : "bg-gray-100 text-gray-400 dark:bg-slate-800"}`}>
+                className={`font-exo text-xs font-bold px-2.5 py-1 rounded-lg tracking-wide ${clss.active ? "bg-purple-100 text-purple-700 dark:bg-purple-950/50 dark:text-purple-400" : "bg-gray-100 text-gray-400 dark:bg-slate-800"}`}>
                 {clss.id.toUpperCase()}
               </span>
 
@@ -86,7 +86,7 @@ export default function ClassCategories() {
               )}
             </div>
 
-            <h3 className="font-exo text-xl font-black text-gray-900 group-hover:text-emerald-500 transition-colors">
+            <h3 className="font-exo text-xl font-black text-gray-900 group-hover:text-purple-500 transition-colors">
               {clss.name}
             </h3>
 
@@ -96,7 +96,7 @@ export default function ClassCategories() {
 
             {/* bottom arrow */}
             {clss.active && (
-              <div className="mt-6 pt-4 border-t border-gray-100 dark:border-slate-800 flex justify-between items-center text-xs font-bold text-emerald-500 tracking-wider font-exo uppercase">
+              <div className="mt-6 pt-4 border-t border-gray-100 dark:border-slate-800 flex justify-between items-center text-xs font-bold text-purple-500 tracking-wider font-exo uppercase">
                 <span>Login</span>
                 <span className="transform group-hover:translate-x-1 transition-transform font-extrabold">
                   <MdOutlineKeyboardDoubleArrowRight />

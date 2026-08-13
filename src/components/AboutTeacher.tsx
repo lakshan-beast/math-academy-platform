@@ -34,7 +34,7 @@ export default function AboutTeacher() {
       className="font-baloo py-20 px-6 max-w-7xl mx-auto border-t border-gray-100 ">
       {/* title segment */}
       <div className="mb-12 text-center lg:text-left">
-        <span className="font-exo text-xs font-black text-emerald-500 uppercase tracking-widest bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-md"></span>
+        <span className="font-exo text-xs font-black text-purple-500 uppercase tracking-widest bg-purple-950/40 border border-purple-500/20 px-3 py-1 rounded-md"></span>
         <h2 className="font-exo text-3xl sm:text-5xl font-black text-gray-900 mt-3 tracking-tight uppercase">
           Know Your Instructor
         </h2>
@@ -46,14 +46,14 @@ export default function AboutTeacher() {
         <div className="bg-white border boder-gray-200/60 p-8 rounded-3xl flex flex-col justify-between shadow-sm lg:row-span-2">
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
-              <div className="w-20 h-20 bg-emerald-500 rounded-2xl flex items-center justify-center text-white font-exo font-black text-2xl shadow-lg shadow-emerald-500/10">
+              <div className="w-20 h-20 bg-purple-500 rounded-2xl flex items-center justify-center text-white font-exo font-black text-2xl shadow-lg shadow-purple-500/10">
                 AI
               </div>
               <div>
                 <h3 className="font-exo text-2xl font-black text-gray-900 dark:text-white tracking-tight">
                   Asanka Nayanajith
                 </h3>
-                <p className="font-exo text-xs font-bold text-emerald-500 uppercase tracking-wider mt-0.5">
+                <p className="font-exo text-xs font-bold text-purple-500 uppercase tracking-wider mt-0.5">
                   B.Sc. (Mathematics) Special
                 </p>
               </div>
@@ -70,7 +70,7 @@ export default function AboutTeacher() {
 
           <div className="font-exo pt-6 border-t border-gray-100 dark:border-slate-800 mt-6 flex justify-between items-center text-xs font-bold text-gray-400 tracking-widest">
             <span>PROFESSIONAL ACADEMY</span>
-            <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span className="w-2 h-2 rounded-full bg-purple-500"></span>
           </div>
         </div>
 
@@ -79,7 +79,7 @@ export default function AboutTeacher() {
             <div
               key={i}
               className="bg-slate-900 text-white p-5 rounded-3xl border border-slate-800 flex flex-col justify-center items-center lg:items-start transition-transform duration-300 hover:scale-[1.01]">
-              <span className="font-exo text-3xl font-black text-emerald-400 tracking-tight">
+              <span className="font-exo text-3xl font-black text-purple-400 tracking-tight">
                 {stat.value}
               </span>
               <span className="font-exo text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-0.5">
@@ -99,7 +99,7 @@ export default function AboutTeacher() {
           <div className="space-y-4">
             {teachingSpecialties.map((spec, i) => (
               <div key={i} className="flex items-start space-x-3">
-                <span className="text-emerald-500 font-extrabold text-base mt-0.5">
+                <span className="text-purple-500 font-extrabold text-base mt-0.5">
                   ✓
                 </span>
                 <div>
@@ -116,12 +116,12 @@ export default function AboutTeacher() {
         </div>
 
         {/* Lower Full-Width Contact Matrix Block */}
-        <div className="lg:col-span-2 bg-emerald-950/10 border border-emerald-500/20 p-6 rounded-3xl grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="lg:col-span-2 bg-purple-950/10 border border-purple-500/20 p-6 rounded-3xl grid grid-cols-1 sm:grid-cols-2 gap-4">
           {contactInfo.map((info, idx) => (
             <div
               key={idx}
               className="flex items-center space-x-4 p-2 bg-white/40 dark:bg-slate-900/40 rounded-2xl border border-white/50 dark:border-slate-800/60">
-              <span className="text-2xl p-2 bg-emerald-500/10 text-emerald-500 rounded-xl">
+              <span className="text-2xl p-2 bg-purple-500/10 text-purple-500 rounded-xl">
                 {info.icon}
               </span>
               <div>

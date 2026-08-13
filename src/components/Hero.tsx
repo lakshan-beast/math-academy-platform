@@ -2,11 +2,11 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-linear-to-b from-emerald-50 via-white to-white px-6 overflow-hidden flex justify-center">
+      className="relative bg-linear-to-b from-purple-50 via-white to-white px-6 overflow-hidden flex justify-center">
       <div className="max-w-7xl mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:flex-col-reverse">
         {/* left column */}
         <div className="space-y-6 text-center lg:text-left py-6">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-s font-semibold bg-emerald-100 text-emerald-800 font-baloo">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-s font-semibold bg-purple-100 text-purple-800 font-baloo">
             Grades 6 - 11 Mathematics Specailist
           </span>
 
@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <button
               type="button"
-              className="font-exo w-full sm:w-auto px-8 py-4 font-bold text-white bg-emerald-600 hover:bg-emerald-700  rounded-xl shadow-lg hover:shadow-emerald-200 transition-all cursor-pointer">
+              className="font-exo w-full sm:w-auto px-8 py-4 font-bold text-white bg-purple-600 hover:bg-purple-700  rounded-xl shadow-lg hover:shadow-purple-200 transition-all cursor-pointer">
               Explore Monthly Packs
             </button>
             <a
@@ -37,7 +37,7 @@ export default function Hero() {
 
         {/* right column */}
         <div className="relative flex justify-center">
-          <div className="w-72 h-72 sm:w-96 sm:h-96 bg-emerald-600/10 rounded-full absolute blur-3xl -z-10 animate-pulse"></div>
+          <div className="w-72 h-72 sm:w-96 sm:h-96 bg-purple-600/10 rounded-full absolute blur-3xl -z-10 animate-pulse"></div>
           <div className="border-4 border-gray-100 bg-white shadow-2xl p-8 rounded-3xl max-w-md space-y-6 transform hover:rotate-1 transition-transform">
             <div className="flex items-center justify-between border-b border-gray-100 pb-4">
               <span className="text-sm font-bold text-gray-400">
@@ -46,8 +46,8 @@ export default function Hero() {
               <span className="w-3 h-3 rounded-full bg-red-400"></span>
             </div>
             <div className="space-y-4">
-              <div className="p-4 bg-emerald-50 rounded-xl border border-emerald-100">
-                <p className="text-xs font-bold text-emerald-800 uppercase tracking-wider">
+              <div className="p-4 bg-purple-50 rounded-xl border border-purple-100">
+                <p className="text-xs font-bold text-purple-800 uppercase tracking-wider">
                   Active Subscription
                 </p>
                 <p className="text-lg font-extrabold text-gray-900">

@@ -10,7 +10,7 @@ export default function Footer() {
           {/* brand name and logo */}
           <div className="space-x-4">
             <div className="flex items-center space-x-2">
-              <span className="text-2xl font-black tracking-tight text-emerald-400">
+              <span className="text-2xl font-black tracking-tight text-purple-400">
                 Edu<span className="text-white">Stream</span>
               </span>
             </div>
@@ -43,28 +43,28 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors ">
+                  className="hover:text-purple-400 transition-colors ">
                   <RiArrowRightSFill /> Grade 11 Theory
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors ">
+                  className="hover:text-purple-400 transition-colors ">
                   <RiArrowRightSFill /> Grade 10 Theory
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors ">
+                  className="hover:text-purple-400 transition-colors ">
                   <RiArrowRightSFill /> O/L Paper Class
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors ">
+                  className="hover:text-purple-400 transition-colors ">
                   <RiArrowRightSFill /> Junior Secondary (6-9)
                 </a>
               </li>
@@ -81,28 +81,28 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors">
+                  className="hover:text-purple-400 transition-colors">
                   <RiArrowRightSFill /> Dashboard
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors">
+                  className="hover:text-purple-400 transition-colors">
                   <RiArrowRightSFill /> My Enrolled Packs
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors">
+                  className="hover:text-purple-400 transition-colors">
                   <RiArrowRightSFill /> Billing & Receipts
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-400 transition-colors">
+                  className="hover:text-purple-400 transition-colors">
                   <RiArrowRightSFill /> Support Helpline
                 </a>
               </li>

@@ -8,7 +8,7 @@ export default function Teacher() {
     <section id="intro" className="py-16 px-8 max-w-7xl mx-auto">
       {/* structural title component */}
       <div className="mb-10 text-center lg:text-left">
-        <span className="text-xs font-bold text-emerald-600 uppercase tracking-widset bg-emerald-50 px-3 py-1 rounded-md">
+        <span className="text-xs font-bold text-purple-600 uppercase tracking-widset bg-purple-50 px-3 py-1 rounded-md">
           Meet Your Instructor
         </span>
         <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mt-2 tracking-tight">
@@ -25,13 +25,13 @@ export default function Teacher() {
               <img
                 src="/teacher-image.jpg"
                 alt={mathTeacher.name}
-                className="w-20 h-20 rounded-2xl object-cover border-2 border-emerald-500 shadow-md"
+                className="w-20 h-20 rounded-2xl object-cover border-2 border-purple-500 shadow-md"
               />
               <div>
                 <h3 className="text-xl font-bold text-gray-900">
                   {mathTeacher.name}
                 </h3>
-                <p className="text-xs font-medium text-emerald-600 uppercase tracking-wider mt-0.5">
+                <p className="text-xs font-medium text-purple-600 uppercase tracking-wider mt-0.5">
                   Academy Principal
                 </p>
               </div>
@@ -50,7 +50,7 @@ export default function Teacher() {
                 <div
                   key={index}
                   className="flex items-start space-x-2 text-sm text-gray-800">
-                  <span className="text-emerald-500 font-bold">✓</span>
+                  <span className="text-purple-500 font-bold">✓</span>
                   <span>{qual}</span>
                 </div>
               ))}
@@ -59,7 +59,7 @@ export default function Teacher() {
 
           <div className="pt-6 border-t border-gray-200/60 mt-6 flex justify-between items-center text-xs font-mono text-gray-400">
             <span>VERIFIED INSTRUCTOR</span>
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
           </div>
         </div>
 
