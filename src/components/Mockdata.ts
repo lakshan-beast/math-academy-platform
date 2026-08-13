@@ -71,6 +71,7 @@ export const mathTeacher: TeacherProfile = {
   // introVideoUrl: Video,
   avatarUrl:
     "https://unsplash.com/photos/a-man-in-a-suit-standing-with-his-arms-crossed-tmwHp7-5LP4",
+  // avatarUrl: "../assets/";
 };
 
 export const mockModules: ModulePack[] = [
