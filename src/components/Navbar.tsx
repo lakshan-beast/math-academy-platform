@@ -1,4 +1,3 @@
-
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-8 shadow-sm h-25 rounded-b-3xl">
@@ -12,17 +11,17 @@ export default function Navbar() {
         {/* nav-links */}
         <div className="hidden md:flex items-center space-x-8">
           <a
-            href="#"
+            href="#home"
             className="text-lg font-medium font-exo text-gray-600 hover:text-emerald-600 transition-colors">
             Home
           </a>
           <a
-            href="#"
+            href="#classes"
             className="text-lg font-medium font-exo text-gray-600 hover:text-emerald-600 transition-colors">
             All Courses
           </a>
           <a
-            href="#"
+            href="#about"
             className="text-lg font-medium font-exo text-gray-600 hover:text-emerald-600 transition-colors">
             About
           </a>
@@ -37,7 +36,7 @@ export default function Navbar() {
           <button
             type="button"
             className="px-4 py-2 text-sm font-semibold font-exo text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm transition-all">
-            Get Started
+            Regiter Now
           </button>
         </div>
       </div>
