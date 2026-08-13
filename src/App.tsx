@@ -3,6 +3,8 @@ import Footer from "./components/Footer.js";
 
 import Hero from "./components/Hero.js";
 import Teacher from "./components/Teacher.js";
+import ClassCategories from "./components/ClassCategories.js";
+import AboutTeacher from "./components/AboutTeacher.js";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <main>
         <Hero />
         <Teacher />
+        <ClassCategories />
+        <AboutTeacher />
       </main>
 
       <Footer />
