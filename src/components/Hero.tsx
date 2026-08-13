@@ -1,6 +1,8 @@
 export default function Hero() {
   return (
-    <section className="relative bg-linear-to-b from-emerald-50 via-white to-white px-6 overflow-hidden flex justify-center">
+    <section
+      id="home"
+      className="relative bg-linear-to-b from-emerald-50 via-white to-white px-6 overflow-hidden flex justify-center">
       <div className="max-w-7xl mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:flex-col-reverse">
         {/* left column */}
         <div className="space-y-6 text-center lg:text-left py-6">
@@ -25,11 +27,11 @@ export default function Hero() {
               className="font-exo w-full sm:w-auto px-8 py-4 font-bold text-white bg-emerald-600 hover:bg-emerald-700  rounded-xl shadow-lg hover:shadow-emerald-200 transition-all cursor-pointer">
               Explore Monthly Packs
             </button>
-            <button
-              type="button"
+            <a
+              href="#intro"
               className="font-exo w-full sm:w-auto px-8 py-4 font-bold text-gray-700 bg-gray-100 hover:bg-gray-200  rounded-xl transition-all cursor-pointer">
               Watch Free Intro
-            </button>
+            </a>
           </div>
         </div>
 
