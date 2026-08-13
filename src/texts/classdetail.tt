@@ -1,0 +1,79 @@
+import { useNavigate } from "react-router-dom"; // Page එක මාරු කරන්න
+
+const classesData = [
+  { id: "g6", name: "Grade 06 - Mathematics", desc: "මුල සිට සරලව සිද්ධාන්ත සහ කෙටි ක්‍රම.", active: false },
+  { id: "g7", name: "Grade 07 - Mathematics", desc: "පදනම ශක්තිමත් කරන විශේෂ පුහුණුව.", active: false },
+  { id: "g8", name: "Grade 08 - Mathematics", desc: "ව්‍යූහගත ප්‍රශ්න පත්‍ර සමඟ සිද්ධාන්ත.", active: false },
+  { id: "g9", name: "Grade 09 - Mathematics", desc: "විභාග මට්ටමේ සුවිශේෂී ගැටලු සාකච්ඡාව.", active: false },
+  { id: "g10", name: "Grade 10 - Mathematics", desc: "O/L සිලබස් එකේ මුල් පියවර නිවැරදිව.", active: false },
+  { id: "g11", name: "Grade 11 - Mathematics", desc: "O/L නියත A සාමාර්ථයකට මඟ පෙන්වන ප්‍රධාන පන්තිය.", active: true }, // Active 🔥
+  { id: "paper", name: "O/L Paper Class 2026", desc: "ප්‍රශ්න පත්‍ර 50+ සහ පසුගිය විභාග ප්‍රශ්න විවරණය.", active: true }, // Active 🔥
+];
+
+export default function ClassCategories() {
+  // const navigate = useNavigate(); // React Router දාලා තියෙනවා නම් විතරක් uncomment කරන්න
+
+  return (
+    <section className="font-baloo py-20 px-6 max-w-7xl mx-auto">
+      {/* Title Segment */}
+      <div className="mb-12 text-center">
+        <span className="font-exo text-xs font-black text-emerald-500 uppercase tracking-widest bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-md">
+          // CHOOSE YOUR CLASS
+        </span>
+        <h2 className="font-exo text-3xl sm:text-5xl font-black text-gray-900 dark:text-white mt-3 tracking-tight uppercase">
+          ඔබේ පන්තිය තෝරාගන්න
+        </h2>
+        <p className="text-gray-500 dark:text-gray-400 mt-2 max-w-xl mx-auto text-base">
+          2026 O/L ගණිතය ජයග්‍රහණය කිරීමට අවශ්‍ය සියලුම පන්ති කාණ්ඩ පහතින් ලබාගන්න.
+        </p>
+      </div>
+
+      {/* Bento Grid Matrix */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {classesData.map((cls) => (
+          <div
+            key={cls.id}
+            className={`relative group bg-white dark:bg-slate-900 border p-6 rounded-3xl transition-all duration-300 shadow-sm
+              ${cls.active 
+                ? "border-emerald-500/30 dark:border-emerald-500/20 shadow-emerald-500/5 hover:-translate-y-1 hover:shadow-md hover:border-emerald-500 cursor-pointer" 
+                : "border-gray-200 dark:border-slate-800 opacity-40 pointer-events-none"
+              }`}
+            onClick={() => cls.active && alert(`${cls.name} පන්තියට සාදරයෙන් පිළිගනිමු!`)}
+          >
+            {/* Top Row Indicators */}
+            <div className="flex justify-between items-start mb-4">
+              <span className={`font-exo text-xs font-bold px-2.5 py-1 rounded-lg tracking-wide ${
+                cls.active ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400" : "bg-gray-100 text-gray-400 dark:bg-slate-800"
+              }`}>
+                {cls.id.toUpperCase()}
+              </span>
+              
+              {!cls.active && (
+                <span className="font-exo text-[10px] font-black tracking-wider text-amber-600 bg-amber-100 dark:bg-amber-950/40 dark:text-amber-400 px-2 py-0.5 rounded-md uppercase">
+                  Coming Soon
+                </span>
+              )}
+            </div>
+
+            {/* Class Content */}
+            <h3 className="font-exo text-xl font-black text-gray-900 dark:text-white group-hover:text-emerald-500 transition-colors">
+              {cls.name}
+            </h3>
+            
+            <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed">
+              {cls.desc}
+            </p>
+
+            {/* Bottom Arrow/Action Panel */}
+            {cls.active && (
+              <div className="mt-6 pt-4 border-t border-gray-100 dark:border-slate-800 flex justify-between items-center text-xs font-bold text-emerald-500 tracking-wider font-exo uppercase">
+                <span>ඇතුල් වන්න</span>
+                <span className="transform group-hover:translate-x-1 transition-transform font-extrabold">➔</span>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

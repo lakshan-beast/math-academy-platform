@@ -1,0 +1,43 @@
+import { useEffect, useRef } from "react";
+
+export default function Grade11VideoPlayer() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    // 1. Right Click බ්ලොක් කිරීමේ ලොජික් එක
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+      alert("Security Alert: Right Click is disabled on this platform!");
+    };
+
+    // 2. Tab එකෙන් ඉවතට යද්දී වීඩියෝ එක Pause කිරීමේ ලොජික් එක
+    const handleVisibilityChange = () => {
+      if (document.hidden && videoRef.current) {
+        videoRef.current.pause();
+        console.log("Tab focus lost. Video paused for security.");
+      }
+    };
+
+    // Event listeners ඇමිණීම
+    document.addEventListener("contextmenu", handleContextMenu);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    // Component එකෙන් අයින් වෙද්දී listeners ක්ලීන් කිරීම
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
+  return (
+    <div className="rounded-3xl overflow-hidden border-4 border-slate-900 shadow-2xl">
+      <video
+        ref={videoRef}
+        src="/Dummy-Videos-For-Demo-Use.mp4"
+        controls
+        controlsList="nodownload nopictureinpicture" // Download සහ picture-in-picture බ්ලොක් කරයි
+        className="w-full h-full object-cover"
+      />
+    </div>
+  );
+}
